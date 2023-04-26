@@ -23,9 +23,6 @@
     "noPropertyAccessFromIndexSignature": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "lib": [
-      "ES2021.String"
-    ]
+    "skipLibCheck": true
   }
 }
