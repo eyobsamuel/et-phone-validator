@@ -2,7 +2,7 @@ import etPhone from "./index";
 
 describe('et-phone will validate', () => {
   test("ethiopian ethio-telecom mobile phone numbers", () => {
-    expect(etPhone("+251 911 23 45 67")).toMatchObject({
+    expect(etPhone("+251 911 23 45 67",)).toMatchObject({
       isValid: true,
       phoneNumber: "+251911234567",
       provider: "Ethio telecom",
@@ -139,6 +139,15 @@ describe('et-phone will validate', () => {
       phoneNumber: "1234",
       provider: "Ethio telecom",
       phoneType: "Special",
+    });
+  })
+
+  test("ethiopian phone number with specific provider", () => {
+    expect(etPhone("0911234567", ["all"], ["all"])).toMatchObject({
+      isValid: true,
+      phoneNumber: "+251911234567",
+      provider: "Ethio telecom",
+      phoneType: "Mobile",
     });
   })
 })
