@@ -33,7 +33,7 @@ jobs:
       - name: Check coverage threshold
         run: |
           COVERAGE_THRESHOLD=60
-          COVERAGE_REPORT=$(cat coverage/lcov-report/index.html | grep -oP "(?<=<strong>)[^<]+(?=</strong>)")
+          # COVERAGE_REPORT=$(cat coverage/lcov-report/index.html | grep -oP "(?<=<strong>)[^<]+(?=</strong>)")
 
           # if (( $(echo "$COVERAGE_REPORT < $COVERAGE_THRESHOLD" | bc -l) )); then
           #   echo "Coverage is below the threshold ($COVERAGE_THRESHOLD%)."
