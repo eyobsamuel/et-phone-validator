@@ -143,7 +143,7 @@ describe('et-phone will validate', () => {
   })
 
   test("ethiopian phone number with specific provider", () => {
-    expect(etPhone("0911234567", ["all"], ["all"])).toMatchObject({
+    expect(etPhone("0911234567", ["all"], ["ethioTelecom"])).toMatchObject({
       isValid: true,
       phoneNumber: "+251911234567",
       provider: "Ethio telecom",

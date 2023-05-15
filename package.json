@@ -1,10 +1,10 @@
 {
   "name": "et-phone",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "A phone validation npm package for Ethiopian Ethio-telecom and Safaricom numbers that takes any phone number and type of a phone numbers, and returns true when it is valid or false when it is invalid.",
   "main": "index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
+  "type":"module",
   "files": [
     "dist",
     "LICENSE",
