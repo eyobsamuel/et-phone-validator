@@ -1,7 +1,5 @@
 /**
- * A phone validation function for Ethiopian Ethio-telecom and Safaricom numbers that takes
- * any phone number and type of a phone numbers,
- * and returns true when it is valid or false when it is invalid.
+ * A phone validation function for Ethiopian Ethio-telecom and Safaricom numbers.
  *
  * @param {string | number} - Phone number
  * @param {"all" | "mobile" | "fixedLine" | "special" | "shortCode" []} [type= "mobile", "fixedLine"] - Phone number type
